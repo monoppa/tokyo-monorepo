@@ -32,6 +32,7 @@ jobs:
           node-version: 16.x
 
       - name: Install dependecies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
       - name: Lint
