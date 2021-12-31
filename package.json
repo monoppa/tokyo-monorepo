@@ -14,7 +14,7 @@
     "lint": "turbo run lint",
     "type-check": "tsc --pretty --noEmit",
     "pre-commit": "turbo run lint format",
-    "pre-push": "turbo run lint format",
+    "pre-push": "turbo run lint",
     "prepare": "husky install"
   },
   "devDependencies": {
