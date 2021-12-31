@@ -16,17 +16,15 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-      - name: Setup Node.js environment
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install dependecies
         uses: actions/setup-node@v2
         with:
           cache: yarn
           cache-dependency-path: yarn.lock
           node-version: 16.x
-
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Install dependecies
         run: yarn install --frozen-lockfile
 
       - name: Lint
