@@ -30,4 +30,4 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Lint
-        run: yarn turbo lint
+        run: yarn turbo run lint
