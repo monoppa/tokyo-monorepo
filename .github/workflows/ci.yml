@@ -21,7 +21,7 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: '**/node_modules'
+          path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Setup Node.js environment
@@ -35,5 +35,5 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
-      - name: Lint
-        run: yarn turbo run lint
+      - name: Lint-Build-Test
+        run: yarn turbo run lint build
