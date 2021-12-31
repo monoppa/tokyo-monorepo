@@ -1,20 +1,20 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { Alert } from "./Alert";
+import { Alert } from './Alert'
 
 export default {
-  title: "Example/Alert",
+  title: 'Example/Alert',
   component: Alert,
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof Alert>;
+} as ComponentMeta<typeof Alert>
 
-const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />;
+const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
   primary: true,
-  label: "Button",
-};
+  label: 'Button',
+}

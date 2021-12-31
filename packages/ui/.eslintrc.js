@@ -1,8 +1,8 @@
 module.exports = {
-  extends: ["next", "prettier"],
+  extends: ['next', 'prettier'],
   settings: {
     next: {
-      rootDir: ["./apps/*/", "./packages/*/"],
+      rootDir: ['./apps/*/', './packages/*/'],
     },
   },
-};
+}

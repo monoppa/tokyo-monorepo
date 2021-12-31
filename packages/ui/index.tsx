@@ -1,3 +1,2 @@
-import * as React from "react";
-export * from "./Button";
-export * from "./components/Alert";
+import * as React from 'react'
+export * from './components/Alert'
