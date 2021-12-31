@@ -1,0 +1,10 @@
+node_modules
+.next
+.turbo
+yarn.lock
+package-lock.json
+public
+src/generated
+hasura
+schema.graphql
+storybook-static
