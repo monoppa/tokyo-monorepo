@@ -1,16 +1,17 @@
-# Turborepo starter
+# Tokyo Monorepo
 
-This is an official Yarn v1 starter turborepo.
+Based from Turborepo starter
 
 ## What's inside?
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
+This monorepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
 
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org) app
 - `web`: another [Next.js](https://nextjs.org) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
+- `ui-storybook`: storybook setup to allow component building/discoverability
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -25,16 +26,11 @@ This turborepo has some additional tools already setup for you:
 - [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
 
-## Setup
-
-This repository is used in the `npx create-turbo` command, and selected when choosing which package manager you wish to use with your monorepo (Yarn).
-
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run build
 ```
 
@@ -43,7 +39,6 @@ yarn run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run dev
 ```
 
