@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    name: lint-build
+    timeout-minutes: 10
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          cache: yarn
+          cache-dependency-path: yarn.lock
+          node-version: 16.x
+
+      - name: Install dependecies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: Lint-Build-Test
+        run: yarn turbo run lint build
