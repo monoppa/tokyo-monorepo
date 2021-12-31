@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "tokyo-v2",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -9,16 +9,22 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "storybook": "turbo run storybook",
-    "build-storybook": "turbo run build-storybook"
+    "build-storybook": "turbo run build-storybook",
+    "lint": "turbo run lint",
+    "type-check": "tsc --pretty --noEmit",
+    "pre-commit": "turbo run lint format",
+    "pre-push": "turbo run lint format",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
   "turbo": {
+    "baseBranch": "origin/main",
     "pipeline": {
       "build": {
         "dependsOn": [
@@ -32,6 +38,7 @@
       "lint": {
         "outputs": []
       },
+      "format": {},
       "dev": {
         "cache": false
       },

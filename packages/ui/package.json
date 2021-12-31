@@ -19,6 +19,8 @@
   "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook --quiet"
+    "build-storybook": "build-storybook --quiet",
+    "lint": "TIMING=1 eslint components",
+    "format": "prettier --write ."
   }
 }

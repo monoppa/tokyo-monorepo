@@ -8,7 +8,7 @@ module.exports = {
   },
   rules: {
     "@next/next/no-img-element": 0,
-    "no-html-link-for-pages": "off",
+    "@next/next/no-html-link-for-pages": [2, "."],
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-unused-vars": [

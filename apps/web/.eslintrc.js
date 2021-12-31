@@ -1,1 +1,1 @@
-module.exports = require("config/eslint-next");
+module.exports = require('config/eslint-next')
