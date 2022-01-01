@@ -13,7 +13,7 @@
     "build-storybook": "turbo run build-storybook",
     "lint": "turbo run lint",
     "type-check": "tsc --pretty --noEmit",
-    "pre-commit": "turbo run lint format",
+    "pre-commit": "turbo run format lint",
     "pre-push": "turbo run lint",
     "prepare": "husky install"
   },
