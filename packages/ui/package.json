@@ -18,10 +18,13 @@
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.8",
     "tsconfig": "*",
-    "typescript": "^4.5.3"
+    "typescript": "^4.5.3",
+    "tw-config": "*"
   },
   "dependencies": {},
   "scripts": {
+    "dev": "npx tailwindcss -i ./styles/index.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./styles/index.css -o ./dist/output.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook --quiet",
     "lint": "TIMING=1 eslint components",
