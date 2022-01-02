@@ -7,3 +7,4 @@ public
 src/generated
 hasura
 schema.graphql
+supabase.types.ts
