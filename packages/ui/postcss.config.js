@@ -1,1 +1,3 @@
-module.exports = require('tw-config/postcss-config')
+module.exports = {
+  plugins: [require('tailwindcss'), require('autoprefixer')],
+}
