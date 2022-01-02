@@ -36,3 +36,9 @@ yarn-error.log*
 storybook-static/
 
 dist/
+.env
+
+# Supabase
+**/supabase/.branches
+**/supabase/.temp
+**/supabase/.env
