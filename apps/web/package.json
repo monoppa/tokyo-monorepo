@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "TIMING=1 next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "types": "npx openapi-typescript http://localhost:54321/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiJ9.ZopqoUt20nEV9cklpv9e3yw3PVyZLmKs5qLD6nGL1SI --output types/supabase.types.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.29.1",

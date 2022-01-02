@@ -26,6 +26,40 @@ This turborepo has some additional tools already setup for you:
 - [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
 - [TailwindCSS](https://tailwindcss.com) for UI styling
+- [Supabase](https://supabase.com/) as backend
+
+### Pre-requisites
+
+- [Node 16.x](https://nodejs.org/en/)
+- [Docker](https://docs.docker.com/get-docker/)
+- [Supabase CLI](https://github.com/supabase/cli)
+
+### Develop
+
+1. Start Supabase instance
+
+```
+cd db/main
+supabase start
+```
+
+2. Generating Types
+
+```
+yarn types
+```
+
+3. Run Storybook
+
+```
+yarn storybook
+```
+
+4. Run NextJS projects
+
+```
+yarn dev
+```
 
 ### Build
 
@@ -33,14 +67,6 @@ To build all apps and packages, run the following command:
 
 ```
 yarn run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-yarn run dev
 ```
 
 ### Remote Caching

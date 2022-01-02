@@ -12,6 +12,7 @@
     "storybook": "turbo run storybook",
     "build-storybook": "turbo run build-storybook",
     "lint": "turbo run lint",
+    "types": "turbo run types",
     "type-check": "tsc --pretty --noEmit",
     "pre-commit": "turbo run format lint",
     "pre-push": "turbo run lint",
@@ -38,6 +39,11 @@
         "outputs": []
       },
       "format": {},
+      "types": {
+        "outputs": [
+          "types/**"
+        ]
+      },
       "dev": {
         "cache": false
       },
