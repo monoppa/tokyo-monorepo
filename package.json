@@ -21,7 +21,7 @@
   "devDependencies": {
     "husky": "^7.0.4",
     "prettier": "^2.5.1",
-    "turbo": "latest"
+    "turbo": "1.1.2"
   },
   "turbo": {
     "baseBranch": "origin/main",
