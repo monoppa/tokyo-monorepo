@@ -21,7 +21,7 @@
     "@types/react": "17.0.39",
     "autoprefixer": "^10.4.2",
     "config": "*",
-    "eslint": "7.32.0",
+    "eslint": "8.8.0",
     "next-transpile-modules": "9.0.0",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.18",
