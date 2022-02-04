@@ -21,44 +21,11 @@
   "devDependencies": {
     "husky": "^7.0.4",
     "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "turbo": {
-    "baseBranch": "origin/main",
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "format": {},
-      "types": {
-        "outputs": [
-          "types/**"
-        ]
-      },
-      "dev": {
-        "cache": false
-      },
-      "storybook": {
-        "cache": false
-      },
-      "build-storybook": {
-        "outputs": [
-          "storybook-static/**"
-        ]
-      }
-    }
+    "turbo": "1.1.2"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
-  }
+  },
+  "packageManager": "yarn@1.22.17"
 }

@@ -1,0 +1,34 @@
+{
+  "baseBranch": "origin/main",
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "format": {},
+    "types": {
+      "outputs": [
+        "types/**"
+      ]
+    },
+    "dev": {
+      "cache": false
+    },
+    "storybook": {
+      "cache": false
+    },
+    "build-storybook": {
+      "outputs": [
+        "storybook-static/**"
+      ]
+    }
+  }
+}
