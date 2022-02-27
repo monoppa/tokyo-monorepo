@@ -16,7 +16,8 @@
     "type-check": "tsc --pretty --noEmit",
     "pre-commit": "turbo run format lint",
     "pre-push": "turbo run lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deduplicate": "npx yarn-deduplicate"
   },
   "devDependencies": {
     "husky": "^7.0.4",
