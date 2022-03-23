@@ -1,3 +1,12 @@
+# NextJS app template
+
+Maybe implement a template generator cli
+
+- hygen
+- plop
+- sluh
+- yeoman-generator
+
 ## Getting Started
 
 First, run the development server:
