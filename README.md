@@ -8,14 +8,21 @@ This monorepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package man
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
+#### Apps
+
+- `next-app`: Boilerplate [Next.js](https://nextjs.org) app
+- `web`: Another [Next.js](https://nextjs.org) app
+- `workers`: Node app for background job queueing using [graphile-workers](https://github.com/graphile/worker)
+
+#### Packages
+
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `ui-storybook`: storybook setup to allow component building/discoverability
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `tw-config`: `shareable Tailwind config across multiple UI apps in the repo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
@@ -33,6 +40,17 @@ This turborepo has some additional tools already setup for you:
 - [Node 16.x](https://nodejs.org/en/)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Supabase CLI](https://github.com/supabase/cli)
+
+### Quickstart
+
+1. yarn
+2. yarn run dev - Run all projects
+3. yarn run storybook - Run UI storybook
+
+### Missing CSS files?
+
+- yarn run build - To safely initialize all CSS file locally
+- yarn run dev
 
 ### Develop
 
