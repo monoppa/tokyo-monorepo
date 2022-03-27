@@ -11,13 +11,15 @@
     "dev": "turbo run dev --parallel",
     "storybook": "turbo run storybook",
     "build-storybook": "turbo run build-storybook",
+    "worker": "turbo run worker",
     "lint": "turbo run lint",
     "types": "turbo run types",
     "type-check": "tsc --pretty --noEmit",
     "pre-commit": "turbo run format lint",
     "pre-push": "turbo run lint",
     "prepare": "husky install",
-    "deduplicate": "npx yarn-deduplicate"
+    "deduplicate": "npx yarn-deduplicate",
+    "upgrade-package": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
     "husky": "^7.0.4",

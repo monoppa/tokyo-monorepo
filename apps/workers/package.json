@@ -1,0 +1,31 @@
+{
+  "name": "workers",
+  "version": "1.0.0",
+  "main": "src/worker.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "dev": "nodemon --exec \"node -r esbuild-register ./src/worker.ts\" -e .ts",
+    "worker": "nodemon --exec \"node -r esbuild-register ./src/worker.ts\" -e .ts",
+    "start": "node -r esbuild-register ./src/worker.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit && TIMING=1 eslint src --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "await-to-js": "^3.0.0",
+    "graphile-worker": "^0.12.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^15.12.2",
+    "config": "*",
+    "esbuild": "^0.14.28",
+    "esbuild-register": "^3.3.2",
+    "eslint": "8.11.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.15",
+    "tsconfig": "*",
+    "typescript": "^4.6.2"
+  }
+}

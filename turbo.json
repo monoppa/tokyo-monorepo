@@ -2,33 +2,31 @@
   "baseBranch": "origin/main",
   "pipeline": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**"
-      ]
+      "outputs": ["dist/**", ".next/**", "public/dist/**"],
+      "dependsOn": ["^build"]
     },
     "lint": {
+      "dependsOn": ["^build"],
       "outputs": []
     },
     "format": {},
     "types": {
-      "outputs": [
-        "types/**"
-      ]
+      "outputs": ["types/**"]
     },
     "dev": {
+      "cache": false
+    },
+    "worker": {
       "cache": false
     },
     "storybook": {
       "cache": false
     },
     "build-storybook": {
-      "outputs": [
-        "storybook-static/**"
-      ]
+      "outputs": ["storybook-static/**"]
+    },
+    "clean": {
+      "cache": false
     }
   }
 }
