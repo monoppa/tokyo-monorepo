@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "TIMING=1 next lint",
     "format": "prettier --write .",
-    "types": "npx openapi-typescript http://localhost:54321/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiJ9.ZopqoUt20nEV9cklpv9e3yw3PVyZLmKs5qLD6nGL1SI --output types/supabase.types.ts"
+    "types": "npx openapi-typescript http://localhost:54321/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24ifQ.625_WdcF3KHqz5amU0x2X5WWHP-OEs_4qj0ssLNHzTs --output types/supabase.types.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.35.3",

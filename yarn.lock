@@ -2984,6 +2984,13 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
   integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
 
+"@types/ramda@^0.28.13":
+  version "0.28.13"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.28.13.tgz#fbd4edddcdc39cba789efa6c45c41f8480882c4f"
+  integrity sha512-ugnamgmaRzB6yontWxKh9kVstbO5gbdNGcbmcZI0U4d9S0fmN/VYCbxVm4crMAkRvMyfO4u+VIjH/G2Fyk04aA==
+  dependencies:
+    ts-toolbelt "^6.15.1"
+
 "@types/react-dom@^18.0.4":
   version "18.0.4"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.4.tgz#dcbcadb277bcf6c411ceff70069424c57797d375"
@@ -10130,6 +10137,11 @@ ramda@^0.21.0:
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.21.0.tgz#a001abedb3ff61077d4ff1d577d44de77e8d0a35"
   integrity sha1-oAGr7bP/YQd9T/HVd9RN536NCjU=
 
+ramda@^0.28.0:
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.28.0.tgz#acd785690100337e8b063cab3470019be427cc97"
+  integrity sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -11693,6 +11705,11 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+
+ts-toolbelt@^6.15.1:
+  version "6.15.5"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.15.5.tgz#cb3b43ed725cb63644782c64fbcad7d8f28c0a83"
+  integrity sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==
 
 tsconfig-paths@^3.14.1:
   version "3.14.1"
