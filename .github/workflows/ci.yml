@@ -11,6 +11,9 @@ jobs:
     name: lint-build
     timeout-minutes: 10
     runs-on: ${{ matrix.os }}
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: x
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: x
     strategy:
       matrix:
         os: [ubuntu-latest]
