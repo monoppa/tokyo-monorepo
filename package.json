@@ -24,7 +24,7 @@
   "devDependencies": {
     "husky": "^7.0.4",
     "prettier": "^2.6.2",
-    "turbo": "1.2.2"
+    "turbo": "1.2.11"
   },
   "engines": {
     "npm": ">=7.0.0",
