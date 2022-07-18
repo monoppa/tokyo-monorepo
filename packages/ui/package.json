@@ -11,7 +11,7 @@
     "@storybook/addon-links": "^6.4.21",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.4.21",
-    "@types/react": "^18.0.11",
+    "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",

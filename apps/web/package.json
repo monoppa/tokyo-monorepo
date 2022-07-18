@@ -13,12 +13,12 @@
   "dependencies": {
     "@supabase/supabase-js": "^1.35.3",
     "next": "12.1.6",
-    "react": "18.1.0",
+    "react": "18.2.0",
     "react-dom": "18.1.0",
     "ui": "*"
   },
   "devDependencies": {
-    "@types/react": "18.0.11",
+    "@types/react": "18.0.15",
     "autoprefixer": "^10.4.7",
     "config": "*",
     "eslint": "8.17.0",
