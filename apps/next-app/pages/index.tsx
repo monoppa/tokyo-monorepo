@@ -1,7 +1,6 @@
 import { supabase } from 'helpers/supabase'
 // import { definitions } from '../types/supabase.types'
 import { useEffect } from 'react'
-// import * as R from 'ramda'
 
 export default function Web() {
   // const y = { a: 1, b: 2, c: 3 }
