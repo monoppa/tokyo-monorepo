@@ -16,7 +16,7 @@
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24",
+    "tailwindcss": "^3.1.7",
     "tsconfig": "*",
     "tw-config": "*",
     "typescript": "^4.7.3"
