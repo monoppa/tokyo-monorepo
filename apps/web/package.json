@@ -11,22 +11,22 @@
     "types": "npx openapi-typescript http://localhost:54321/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24ifQ.625_WdcF3KHqz5amU0x2X5WWHP-OEs_4qj0ssLNHzTs --output types/supabase.types.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.35.3",
-    "next": "12.2.3",
+    "@supabase/supabase-js": "^2.0.5",
+    "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "ui": "*"
   },
   "devDependencies": {
-    "@types/react": "18.0.15",
-    "autoprefixer": "^10.4.7",
+    "@types/react": "18.0.25",
+    "autoprefixer": "^10.4.13",
     "config": "*",
-    "eslint": "8.20.0",
-    "next-transpile-modules": "9.0.0",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7",
+    "eslint": "8.27.0",
+    "next-transpile-modules": "10.0.0",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.2",
     "tsconfig": "*",
     "tw-config": "*",
-    "typescript": "^4.7.3"
+    "typescript": "^4.8.4"
   }
 }
