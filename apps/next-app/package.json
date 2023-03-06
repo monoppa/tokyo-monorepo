@@ -11,7 +11,7 @@
     "types": "npx openapi-typescript http://localhost:54321/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiJ9.ZopqoUt20nEV9cklpv9e3yw3PVyZLmKs5qLD6nGL1SI --output types/supabase.types.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.35.3",
+    "@supabase/supabase-js": "^2.10.0",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
